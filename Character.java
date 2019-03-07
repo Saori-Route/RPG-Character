@@ -9,4 +9,11 @@ public class Character {
 
 	}
 
+
+	public void attack(){
+		System.out.println(name+"の攻撃！！"+name+"に30のダメージ！！");
+
+
+	}
+
 }
