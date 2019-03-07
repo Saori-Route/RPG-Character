@@ -19,7 +19,8 @@ public class RPGcharacter {
 		a.introduce();
 		z.introduce();
 
-    	a.attack();
+
+        a.attack();
 		z.attack();
 
 	}
