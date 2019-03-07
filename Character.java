@@ -11,7 +11,7 @@ public class Character {
 
 
 	public void attack(){
-		System.out.println(name+"の攻撃！！"+name+"に30のダメージ！！");
+		System.out.println(name+"への攻撃！！"+name+"に30のダメージ！！");
 
 
 	}
