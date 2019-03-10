@@ -3,7 +3,7 @@ public class Character {
 
 	public Character(){
 
-	};
+	}
 
 	public int hp;
 	public int hp2;
