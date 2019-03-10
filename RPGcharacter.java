@@ -19,8 +19,17 @@ public class RPGcharacter {
 		a.introduce();
 		z.introduce();
 
-		a.attack();
-		z.attack();
+		Character a1 = new Character("さくら",50,
+				30);
+		Character z1 = new Character("みかん",35,30);
+
+
+		a1.attack();{
+			z1.damage();
+		}
+		z1.attack();{
+			a1.damage();
+		}
 
 	}
 
