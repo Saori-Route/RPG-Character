@@ -6,10 +6,9 @@ public class Character {
 	}
 
 	public int hp;
-	public int hp2;
-	public int hp3;
 	public int mp;
 	public String name;
+	public int clash;
 
 	public void introduce(){
 		System.out.println("私の名前は"+name+"だよ！！"+"体力は"+hp+"で、"+"魔力は"+mp+"だよ！よろしくね！！");
@@ -17,21 +16,26 @@ public class Character {
 	}
 
 
-	public Character(String name,int hp2,int hp3){
+	public Character(String name,int clash,int hp){
 
 
 		this.name= name;
-		this.hp2 = hp2;
-		this.hp3 = hp3;
+		this.hp = hp;
+		this.mp = mp;
+		this.clash = clash;
+
 
 	}
-		public void attack() {
+
+		public void attack(Character target) {
 			System.out.println(this.name+"の攻撃！！");
+			target.damage(clash);
 		}
 
 
-	    public void damage(){
-		    System.out.println(this.name+"は攻撃を受けた！！HPに"+this.hp2+"のダメージ！"+"HPは"+this.hp3+"になった！");
+	    public void damage(int clash){
+	    	hp-=clash;
+		    System.out.println(this.name+"は攻撃を受けた！！"+this.clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 
 	}
 
