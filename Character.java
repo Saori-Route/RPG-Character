@@ -33,7 +33,7 @@ public class Character {
 
 
 	public void damage(int clash){
-	    hp-=clash;
+		hp-=clash;
 		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 
 	}
