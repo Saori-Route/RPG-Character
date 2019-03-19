@@ -21,22 +21,21 @@ public class Character {
 
 		this.name= name;
 		this.hp = hp;
-		this.mp = mp;
 		this.clash = clash;
 
 
 	}
 
-		public void attack(Character target) {
+	public void attack(Character target) {
 			System.out.println(this.name+"の攻撃！！");
 			target.damage(clash);
-		}
+	}
 
 
-	    public void damage(int clash){
+	public void damage(int clash){
 	    	hp-=clash;
-		    System.out.println(this.name+"は攻撃を受けた！！"+this.clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
+		    System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 
 	}
 
-	}
+}
