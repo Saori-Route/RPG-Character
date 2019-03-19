@@ -27,14 +27,14 @@ public class Character {
 	}
 
 	public void attack(Character target) {
-			System.out.println(this.name+"の攻撃！！");
-			target.damage(clash);
+		System.out.println(this.name+"の攻撃！！");
+		target.damage(clash);
 	}
 
 
 	public void damage(int clash){
-	    	hp-=clash;
-		    System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
+	    hp-=clash;
+		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 
 	}
 
