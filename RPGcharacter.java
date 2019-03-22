@@ -2,16 +2,36 @@
 public class RPGcharacter {
 	public static void main(String[] args){
 
-		Character a1 = new Character("さくら",20,80);
+		Magician a;
+		a = new Magician();
 
-		Character z1 = new Character("みかん",30,65);
+		a.hp = 80;
+		a.mp = 70;
+		a.clash = 20;
+		a.name ="さくら";
+
+		Healer z;
+		z = new Healer();
+
+		z.hp = 65;
+		z.mp = 90;
+		z.clash = 30;
+		z.name ="みかん";
+
+		a.introduce();
+		z.introduce();
 
 
-		a1.attack(z1);
-		System.out.println("きゃああああああああああああああああああああ");
+		Character a1 = new Magician("さくら","滅びろ");
 
-		z1.attack(a1);
-		System.out.println("まだまだああああああああああああああああああ");
+		Character z1 = new Healer("みかん","癒しの光");
+
+
+		a1.magic();
+		System.out.println("エンドレスファイアアアアアアアアアアアアア");
+
+		z1.heal();
+		System.out.println("ぽわわわああああああああああああああん");
 
 
 	}
