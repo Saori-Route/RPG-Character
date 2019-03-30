@@ -9,8 +9,6 @@ public class Character {
 	public int mp;
 	public String name;
 	public int clash;
-	public String spell;
-	public String heal;
 
 	public void introduce(){
 		System.out.println("私の名前は"+name+"だよ！！"+"体力は"+hp+"で、"+"魔力は"+mp+"だよ！よろしくね！！");
@@ -24,8 +22,6 @@ public class Character {
 		this.name= name;
 		this.hp = hp;
 		this.clash = clash;
-		this.spell= spell;
-		this.heal= heal;
 
 
 	}
@@ -41,7 +37,6 @@ public class Character {
 		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 
 	}
-
 
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
