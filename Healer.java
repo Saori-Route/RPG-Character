@@ -1,29 +1,23 @@
 
 class Healer extends Character {
+	private String heal;
 
 	public Healer() {
 
 	}
-
-	public int hp;
-	public int mp;
-	public String heal;
-	public String name;
-	public int clash;
-
 
 	public void introduce(){
 		System.out.println("私の名前は"+name+"よ！"+"職業はヒーラー！！");
 	}
 
 	public Healer(String name,String heal) {
+		super(name,80,30);
+		this.heal = heal;
 
-		this.name=name;
-		this.heal=heal;
 
 	}
 
-	public void attack() {
+	public void attack(Character target) {
 		heal();
 	}
 
