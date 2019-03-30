@@ -1,15 +1,10 @@
 
 class Magician extends Character {
+	private String spell;
 
 	public Magician(){
 
 	}
-
-	public int hp;
-	public int mp;
-	public String spell;
-	public String name;
-	public int clash;
 
 
 
@@ -19,10 +14,10 @@ class Magician extends Character {
 
 
 	public Magician(String name,String spell){
+		super(name,50,50);
+		this.spell = spell;
 
 
-		this.name= name;
-		this.spell=spell;
 
 	}
 
@@ -33,6 +28,5 @@ class Magician extends Character {
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
 	}
-
 
 }
