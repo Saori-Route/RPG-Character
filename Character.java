@@ -38,12 +38,5 @@ public class Character {
 
 	}
 
-	public void magic(){
-		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
-	}
-
-	public void heal() {
-		System.out.println(this.name+"の"+this.heal);
-	}
-
 }
+
