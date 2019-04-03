@@ -23,6 +23,7 @@ class Magician extends Character {
 
 	public void attack(Character target) {
 		magic();
+		target.damage(clash);
 	}
 
 	public void magic(){
