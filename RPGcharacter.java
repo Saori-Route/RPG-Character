@@ -3,7 +3,7 @@ public class RPGcharacter {
 	public static void main(String[] args){
 
 		Magician a;
-		a = new Magician();
+		a = new Magician("さくら","滅びろ");
 
 		a.hp = 80;
 		a.mp = 70;
@@ -11,7 +11,7 @@ public class RPGcharacter {
 		a.name ="さくら";
 
 		Healer z;
-		z = new Healer();
+		z = new Healer("みかん","強烈な睡魔の呪文");
 
 		z.hp = 65;
 		z.mp = 90;
@@ -20,21 +20,7 @@ public class RPGcharacter {
 
 		a.introduce();
 		z.introduce();
-
-
-		Character a1 = new Magician("さくら","滅びろ");
-
-		Character z1 = new Healer("みかん","癒しの光");
-
-
-		a1.magic();
-		System.out.println("エンドレスファイアアアアアアアアアアアアア");
-
-		z1.heal();
-		System.out.println("ぽわわわああああああああああああああん");
-
-
+		a.attack(z);
+		z.attack(a);
 	}
-
-
 }
