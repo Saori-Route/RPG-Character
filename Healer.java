@@ -19,6 +19,7 @@ class Healer extends Character {
 
 	public void attack(Character target) {
 		heal();
+		target.damage(clash);
 	}
 
 	public void heal() {
