@@ -3,6 +3,7 @@ class Healer extends Character {
 	private String heal;
 
 	public Healer() {
+		this.heal = "強烈な睡魔の呪文";
 
 	}
 
@@ -16,7 +17,7 @@ class Healer extends Character {
 
 
 	}
-
+    @Override
 	public void attack(Character target) {
 		heal();
 		target.damage(clash);
@@ -26,6 +27,9 @@ class Healer extends Character {
 		System.out.println(this.name+"の"+this.heal);
 	}
 
-
+	@Override
+    public void attack(){
+		heal();
+	}
 
 }
