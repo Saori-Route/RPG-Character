@@ -3,6 +3,7 @@ class Knight extends Character {
 	private String sword;
 
 	public Knight() {
+		this.sword = "ファイヤーエンブレム";
 
 	}
 
@@ -26,6 +27,11 @@ class Knight extends Character {
 
 	public void sword() {
 		System.out.println(this.name+"の攻撃"+this.sword+"！！");
+	}
+	
+	@Override
+	public void attack() {
+		sword();
 	}
 
 }
