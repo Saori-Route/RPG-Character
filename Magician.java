@@ -3,6 +3,7 @@ class Magician extends Character {
 	private String spell;
 
 	public Magician(){
+		this.spell ="滅びろ";
 
 	}
 
@@ -20,14 +21,19 @@ class Magician extends Character {
 
 
 	}
-
-	public void attack(Character target) {
+	
+ 	public void attack(Character target) {
 		magic();
 		target.damage(clash);
 	}
 
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
+	}
+	
+	@Override
+	public void attack(){
+		magic();
 	}
 
 }
