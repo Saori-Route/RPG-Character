@@ -1,5 +1,5 @@
 
-public class Character {
+abstract class Character {
 
 	public Character(){
 
@@ -38,5 +38,7 @@ public class Character {
 
 	}
 
+
+	public abstract void attack();
 }
 
