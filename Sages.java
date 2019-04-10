@@ -3,6 +3,7 @@ class Sages extends Character{
 	private String word;
 
 	public Sages() {
+		this.word = "神の御言葉";
 
 	}
 
@@ -28,4 +29,8 @@ class Sages extends Character{
 		System.out.println(this.name+"の攻撃"+this.word+"。");
 	}
 
+	@Override
+	public void attack() {
+		word();
+	}
 }
