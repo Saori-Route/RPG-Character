@@ -1,5 +1,5 @@
 
-class Knight extends Character {
+class Knight extends Character implements Ksb {
 	private String sword;
 
 	public Knight() {
@@ -28,10 +28,16 @@ class Knight extends Character {
 	public void sword() {
 		System.out.println(this.name+"の攻撃"+this.sword+"！！");
 	}
-	
+
 	@Override
 	public void attack() {
 		sword();
 	}
+
+	@Override
+	public void ksb(){
+		System.out.println(this.name+"はジャンプした");
+	}
+
 
 }
