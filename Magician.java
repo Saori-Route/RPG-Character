@@ -1,5 +1,5 @@
 
-class Magician extends Character {
+class Magician extends Character implements Ksb {
 	private String spell;
 
 	public Magician(){
@@ -21,7 +21,7 @@ class Magician extends Character {
 
 
 	}
-	
+
  	public void attack(Character target) {
 		magic();
 		target.damage(clash);
@@ -30,10 +30,15 @@ class Magician extends Character {
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
 	}
-	
+
 	@Override
 	public void attack(){
 		magic();
+	}
+
+	@Override
+	public void ksb() {
+		System.out.println(this.name+"もジャンプした！！");
 	}
 
 }
