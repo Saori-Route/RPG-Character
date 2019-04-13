@@ -2,22 +2,18 @@
 public class RPGcharacter {
 	public static void main(String[] args){
 
-	Magician ss = new Magician();
-	Healer sss = new Healer();
-	Knight ssss = new Knight();
-	Sages sssss = new Sages();
+	     int k1 = 2;
 
-	ss.name = "さくら";
-	sss.name = "みかん";
-	ssss.name = "しょうた";
-	sssss.name = "サラマ";
+	     Character[]k = new Character[k1];
 
+	     k[0]= new Knight();
+	     k[1]= new Magician();
 
+	     for(int i =0; i< k1; i++){
 
-	ss.attack();
-	sss.attack();
-	ssss.attack();
-	sssss.attack();
+	    	 k[i].ksb();
+	     }
+
 
 	}
 
