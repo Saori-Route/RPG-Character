@@ -1,6 +1,5 @@
 
-abstract class Character {
-
+public class Character implements Ksb,Letter,Wa{
 	public Character(){
 
 	}
@@ -40,5 +39,11 @@ abstract class Character {
 
 
 	public abstract void attack();
+
+
+    @Override
+	public void ksb() {
+
+    }
 }
 
