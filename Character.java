@@ -38,7 +38,7 @@
 	}
 
 	@Override
-	public void attack() {
+	abstract void attack() {
 
 	}
 
