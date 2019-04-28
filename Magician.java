@@ -30,18 +30,18 @@ class Magician extends Character implements Ksb {
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
 	}
-	
-	
+
+
 	@Override
 	public void damage(int clash){
 		hp-=clash;
 		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
-	
+
 	}
-	
-	
-		@Override
-	public void ksb(){
+
+
+    @Override
+	public void ksb(Character[] target){
 		System.out.println(this.name+"もジャンプした！！");
 	}
 
