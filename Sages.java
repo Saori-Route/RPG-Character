@@ -1,5 +1,5 @@
 
-class Sages extends Character{
+class Sages extends Character implements Letter {
 	private String word;
 
 	public Sages() {
@@ -32,5 +32,10 @@ class Sages extends Character{
 	@Override
 	public void attack() {
 		word();
+	}
+
+	@Override
+	public void letter(Character[]target) {
+		System.out.println(this.name+"は書簡を送った");
 	}
 }
