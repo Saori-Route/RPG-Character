@@ -1,5 +1,5 @@
 
-class Knight extends Character implements Ksb {
+class Knight extends Character implements Movable,Ksb {
 	private String sword;
 
 	public Knight() {
