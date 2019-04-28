@@ -21,7 +21,7 @@ class Magician extends Character implements Ksb {
 
 
 	}
-
+    @Override
  	public void attack(Character target) {
 		magic();
 		target.damage(clash);
@@ -30,14 +30,18 @@ class Magician extends Character implements Ksb {
 	public void magic(){
 		System.out.println(this.name+"の魔法攻撃！！"+this.spell+"！！");
 	}
-
+	
+	
 	@Override
-	public void attack(){
-		magic();
+	public void damage(int clash){
+		hp-=clash;
+		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
+	
 	}
-
-	@Override
-	public void ksb() {
+	
+	
+		@Override
+	public void ksb(){
 		System.out.println(this.name+"もジャンプした！！");
 	}
 
