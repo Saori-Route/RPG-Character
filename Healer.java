@@ -1,5 +1,5 @@
 
-class Healer extends Character {
+class Healer extends Character implements Wa{
 	private String heal;
 
 	public Healer() {
@@ -30,6 +30,11 @@ class Healer extends Character {
 	@Override
     public void attack(){
 		heal();
+	}
+
+	@Override
+	public void warau(Character [] target) {
+		System.out.println(this.name+"は笑った");
 	}
 
 }
