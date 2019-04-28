@@ -1,5 +1,5 @@
 
 interface Ksb {
-	ksb();
+	public void ksb(Character[] target);
 
 }
