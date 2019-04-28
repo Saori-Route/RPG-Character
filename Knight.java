@@ -19,7 +19,7 @@ class Knight extends Character implements Ksb {
 		this.sword= swrod;
 
 	}
-
+    @Override
 	public void attack(Character target) {
 		sword();
 		target.damage(clash);
@@ -27,12 +27,15 @@ class Knight extends Character implements Ksb {
 
 	public void sword() {
 		System.out.println(this.name+"の攻撃"+this.sword+"！！");
+
 	}
 
 	@Override
-	public void attack() {
-		sword();
+	public void damage(int clash){
+		hp-=clash;
+		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
 	}
+
 
 	@Override
 	public void ksb(){
