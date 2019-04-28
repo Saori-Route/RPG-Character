@@ -1,5 +1,5 @@
 
- abstract class Character implements Ksb,Letter,Wa{
+ public class Character implements Movable,Ksb,Wa,Letter{
 	public Character(){
 
 	}
@@ -25,7 +25,10 @@
 
 	}
 
-	public abstract void attack(Character target);
+	public void attack(Character target){
+		System.out.println(this.name+"の攻撃！！");
+		target.damage(clash);
+	}
 
 
 	public void damage(int clash){
@@ -36,7 +39,23 @@
 
 
     @Override
-	public void ksb() {
+	public void ksb(Character [] target) {
+    	System.out.println(this.name+"はジャンプした");
+
+    }
+
+    @Override
+    public void move(Character [] target) {
+    	System.out.println(this.name+"は歩いた");
+    }
+
+    @Override
+    public void warau(Character [] target) {
+
+    }
+
+    @Override
+    public void letter(Character[] target) {
 
     }
 }
