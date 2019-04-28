@@ -25,20 +25,12 @@
 
 	}
 
-	public void attack(Character target) {
-		System.out.println(this.name+"の攻撃！！");
-		target.damage(clash);
-	}
+	public abstract void attack(Character target);
 
 
 	public void damage(int clash){
 		hp-=clash;
 		System.out.println(this.name+"は攻撃を受けた！！"+clash+"のダメージ！!"+"HPは"+this.hp+"になった！");
-
-	}
-
-	@Override
-	abstract void attack() {
 
 	}
 
